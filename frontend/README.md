@@ -10,3 +10,33 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+src/
+├── assets/
+├── components/
+│ ├── cart/
+│ │ ├── CartItem.jsx
+│ │ ├── CartSummary.jsx
+│ │ └── AddToCartButton.jsx
+│ └── products/
+│ ├── ProductCard.jsx
+│ └── ProductGrid.jsx
+├── features/
+│ ├── cart/
+│ │ ├── cartSlice.js
+│ │ └── cartAPI.js
+│ └── products/
+│ ├── productsSlice.js
+│ └── productsAPI.js
+├── hooks/
+│ └── useConcurrentCart.js
+├── pages/
+│ ├── CartPage.jsx
+│ ├── ProductPage.jsx
+│ └── CheckoutPage.jsx
+├── store/
+│ └── store.js
+├── utils/
+│ └── api.js
+├── App.jsx
+└── main.jsx
